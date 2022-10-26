@@ -1,0 +1,17 @@
+<form [formGroup]="formEmpleado">
+    <mat-form-field appearance="outline">
+        <mat-label>Nombre empleado</mat-label>
+        <input matInput placeholder="Ex. Mia" #input formControlName="name">
+        <mat-error>Campo Requerido</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Area Empleado</mat-label>
+        <mat-select formControlName="area">
+            <mat-option value="Administacion">Administacion </mat-option>
+            <mat-option value="Desarrollo">Desarrollo</mat-option>
+            <mat-option value="Gerencia">Gerencia</mat-option>
+        </mat-select>
+        <mat-error>Campo Requerido</mat-error>
+    </mat-form-field>
+    <button class="iniciar" (click)="guardar()">Guardar</button>
+</form>

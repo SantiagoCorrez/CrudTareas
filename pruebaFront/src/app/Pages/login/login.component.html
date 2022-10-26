@@ -1,0 +1,16 @@
+<div class="login">
+    <form class="loged" [formGroup]="formLogin">
+        <h1>Registro de tareas</h1>
+        <mat-form-field appearance="outline">
+            <mat-label>Usuario</mat-label>
+            <input matInput placeholder="Usuario" formControlName="user">
+            <mat-error>Campo Requerido</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Contraseña</mat-label>
+            <input matInput placeholder="Contraseña" type="password" formControlName="pass">
+            <mat-error>Campo Requerido</mat-error>
+        </mat-form-field>
+        <button class="iniciar" (click)="login()">Iniciar Sesion</button>
+    </form>
+</div>

@@ -1,0 +1,28 @@
+<form [formGroup]="formTask">
+    <mat-form-field appearance="outline">
+        <mat-label>Empleado</mat-label>
+        <mat-select formControlName="idUser">
+            <mat-option *ngFor="let empleado of empleados" [value]="empleado.id">{{empleado.area}} - {{empleado.name}}</mat-option>
+        </mat-select>
+        <mat-error>Campo Requerido</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Tarea</mat-label>
+        <input matInput placeholder="Ex. Mia" #input formControlName="task">
+        <mat-error>Campo Requerido</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Fecha estimada</mat-label>
+        <input matInput placeholder="Ex. Mia" #input formControlName="fecha" type="date">
+        <mat-error>Campo Requerido</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Estado</mat-label>
+        <mat-select formControlName="status">
+            <mat-option value="Pendiente">Pendiente</mat-option>
+            <mat-option value="Cerrada">Cerrada</mat-option>
+        </mat-select>
+        <mat-error>Campo Requerido</mat-error>
+    </mat-form-field>
+    <button class="iniciar" (click)="guardar()">Guardar</button>
+</form>

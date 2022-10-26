@@ -1,0 +1,29 @@
+.login {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%230099ff' fill-opacity='1' d='M0 288L15 282.7C30 277 60 267 90 245.3C120 224 150 192 180 160C210 128 240 96 270 90.7C300 85 330 107 360 144C390 181 420 235 450 250.7C480 267 510 245 540 240C570 235 600 245 630 224C660 203 690 149 720 138.7C750 128 780 160 810 165.3C840 171 870 149 900 154.7C930 160 960 192 990 202.7C1020 213 1050 203 1080 165.3C1110 128 1140 64 1170 48C1200 32 1230 64 1260 90.7C1290 117 1320 139 1350 160C1380 181 1410 203 1425 213.3L1440 224L1440 320L1425 320C1410 320 1380 320 1350 320C1320 320 1290 320 1260 320C1230 320 1200 320 1170 320C1140 320 1110 320 1080 320C1050 320 1020 320 990 320C960 320 930 320 900 320C870 320 840 320 810 320C780 320 750 320 720 320C690 320 660 320 630 320C600 320 570 320 540 320C510 320 480 320 450 320C420 320 390 320 360 320C330 320 300 320 270 320C240 320 210 320 180 320C150 320 120 320 90 320C60 320 30 320 15 320L0 320Z'%3E%3C/path%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    text-align: center;
+}
+
+.loged {
+    padding: 10% 20%;
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+.iniciar {
+    appearance: none;
+    border: none;
+    background-color: #1f537f;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 2.5vh;
+    border-radius: 25px;
+    cursor: pointer;
+}
